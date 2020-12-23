@@ -41,5 +41,5 @@ start_search_button.pack()
 output = tk.Text()
 output.pack()
 
-domain = 'jogger.com'
+window.mainloop()
 
