@@ -1,7 +1,7 @@
 import requests
 import json
 
-def get_access_token():
+def get_access_token(id,secret):
     params = {
         'grant_type':'client_credentials',
         'client_id':'20b2453e33887343c8c67d3d98b8f39e',
