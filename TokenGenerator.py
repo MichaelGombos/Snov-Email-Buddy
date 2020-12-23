@@ -12,5 +12,3 @@ def get_access_token():
     resText = res.text.encode('ascii','ignore')
 
     return json.loads(resText)['access_token']
-
-print(get_access_token())
