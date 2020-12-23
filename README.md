@@ -1,9 +1,12 @@
-# Python Email Scraper
+# Python Email Scraper🐍✉️
 
 This is an tool used for grabbing emails associated with websites.
 For example, lets say you wanted to contact the owner of http://www.jogger.com/ via email.
 This tool would allow you query the emails for this website.
 
+## Prerequisites
+
+This tool requires you to have a snov.io account for proper use, you can find your User ID, and Api Secret on your account page
 ## Download and Installation
 
 ![Simply download and open](https://i.gyazo.com/bdf3baef7a74203d31e6ccd2c04bc06b.gif)
