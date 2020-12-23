@@ -1,4 +1,4 @@
-# SnovPythonEmailGrabber
+# Python Email Scraper
 
 This is an tool used for grabbing emails associated with websites.
 For example, lets say you wanted to contact the owner of http://www.jogger.com/ via email.
