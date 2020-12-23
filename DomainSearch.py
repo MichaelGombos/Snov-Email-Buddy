@@ -3,7 +3,7 @@ import requests
 import TokenGenerator
 
 def get_domain_search(domain):
-    token = get_access_token()
+    token = TokenGenerator.get_access_token()
     params = {
     'access_token': token,
     'domain': domain,
@@ -16,3 +16,4 @@ def get_domain_search(domain):
 
     return json.loads(res.text)
 
+print(get_domain_search('jogger.com'))
