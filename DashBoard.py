@@ -3,14 +3,12 @@ import TokenGenerator
 import tkinter as tk
 
 window = tk.Tk()
-#Will Eventually be deprecated and replaced by a user-interface class
-
 #your user id and secret can be found in your account page at snov.io
 #this program requires a snov.io account to run.
 
-# user_id= '20b2453e33887343c8c67d3d98b8f39e'
-# secret= '9378dfdb3be0d1063925641187e5e8ab'
-# domain = '99cave.com'
+#example user_id= '20b2453e33887343c8c67d3d98b8f39e'
+#example secret= '9378dfdb3be0d1063925641187e5e8ab'
+#example domain = 'jogger.com'
 
 def handle_start():
     user_id = user_id_entry.get()
@@ -18,8 +16,9 @@ def handle_start():
     domain = target_domain_entry.get()
     
     token = TokenGenerator.get_access_token(user_id,secret)
-    
-    print(DomainSearch.get_domain_search(domain,token))
+    output.delete('1.0',tk.END);
+    emailOutput = (DomainSearch.get_domain_search(domain,token)['emails'])
+    output.insert('1.0','EMAILS FOUND FOR THIS DOMAIN :: ' + str(emailOutput))
           
 user_id_label = tk.Label(text='Enter your user_id')
 user_id_entry = tk.Entry(width=50)
